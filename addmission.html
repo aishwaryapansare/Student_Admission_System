@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+<style>
+
+body
+{
+   background: #2D3142;        
+  font-style:Zorina;
+}
+h1
+{
+ background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+  border-radius:25px;
+   border-width: thick;
+  border-color:#EF8354;
+  padding:20;
+  border-style:solid;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  
+ 
+  color:  #363945;
+ 
+  
+  @keyframes mymove {
+  from {background-color:background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ ;}
+  to {background-color: blue;}
+  
+  
+  }
+  
+  
+}
+.container
+{
+   
+ color: #BFC0C0;
+    border-radius:20px;
+    border-style:solid;
+      border-width: thick;
+    
+    border-color:#EF8354;
+   margin: 150px ;
+   position: absolute;
+  top: 15px;
+  right: 350px;
+  width:500px;
+  font-size: 18px;
+  padding: 60px;
+  
+  
+  
+   
+}
+
+
+.button
+{
+
+  border-radius: 4px;
+  background-color:#EF8354;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h2
+{
+     color:orange;
+     font-size:400%;
+     margin:10px;
+ 
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+        }
+</style>
+
+
+</head>
+<body>
+<h1>🙋Welcome To RBNB COLLGE || Addmission Form || Join The Journey To Learn</h1>
+    <h3 align="center" style="color:#FFFFFF;"><marquee><b>👉Please Fill This Form To take addmission in the college👈 </b></marquee></h3><br>
+    
+    
+    
+   <div class="container">
+    <label for="email"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required><br><br>
+    <label for="Last Name"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required><br>
+    <br>
+     <label for="Contact No"><b>Contact No</b></label>
+    <input type="number" placeholder="Enter Contact No" name="cname" required>
+   
+     <label for="birthdate"><b>Date of Birth</b></label>
+    <input type="date" placeholder="Enter BirthDate" name="date" required><br>
+    <br>
+    <label for="Aadhar No"><b>Aadhar No</b></label>
+    <input type="number" placeholder="Enter Aadhar No" name="aname" required>
+    <br>
+    <label for="pan No"><b>Pan No</b></label>
+    <input type="number" placeholder="Enter Pan No" name="aname" required>
+    <br>
+    <label for="10th percentage"><b>10th Percentage</b></label>
+    <input type="number" placeholder="Enter 10th percentage" name="aname" required>
+    <br>
+    <label for="12th percentage No"><b>12th Percentage</b></label>
+    <input type="number" placeholder="Enter 12th percentage" name="aname" required>
+
+
+     <label for="City"><b>City</b></label>
+    <input type="text" placeholder="Enter City" name="ctname" required><br><br>
+     <label for="text"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required><br><br>
+     
+    
+          <label for="text"><b>Username</b></label>
+     <input type="text" placeholder="Create User name" name="u" required><br><br>
+           <label for="text"><b>Password</b></label>
+     
+    <input type="Password"  placeholder="Create password" name="p" required><br><br>
+     <label for="file"><b>Signature</b></label>
+    <input type="file"  placeholder="Sign" name="sign" required><br><br>
+      <label for="file"><b>Image</b></label>
+    <input type="file" placeholder="upload image" name="photo" required><br><br>
+    <input type="file"  placeholder="10th Marksheet" name="marksheet" required><br><br>
+      <label for="file"><b>10th Marksheet</b></label>
+    <!-- <input type="file" placeholder="upload image" name="photo" required><br><br> -->
+    <input type="file"  placeholder="12th Marksheet" name="marksheet" required><br><br>
+      <label for="file"><b>12th Marksheet</b></label>
+    <input type="file" placeholder="upload image" name="photo" required><br><br>
+    
+    
+  <button class="button" name="submit" ><span> Submit </span></button>
+  
+ 
+    </div>
+   
+    
+</body>
+</html>

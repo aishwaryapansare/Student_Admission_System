@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- css -->
+
+  <style type="text/css"> body
+{
+   background: #2D3142;  
+}
+h1
+{
+background-color:#BFC0C0;
+
+}
+
+.button
+{
+
+  border-radius: 4px;
+  background-color:#EF8354;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  position:right;
+  float:right;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+  
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+   border-radius: 4px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+{box-sizing: border-box;}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 600px;
+  top: 150px;
+  z-index: 9;
+  border-style: solid;
+ border-color:#EF8354;
+
+ 
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 80px;
+  background-color: #BFC0C0;;
+  border-style: solid;
+  border-color:#EF8354;
+ 
+  
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border: none;
+  background: #f1f1f1;
+
+  }
+
+ 
+.button1
+{
+ 
+background-color: #2D3142;
+width:110%;
+padding:8px;
+border-radius:9px;
+color:#ffffff;
+font-weight: bold;
+}
+ &#128222
+
+  
+  
+.button1:hover  {
+ background-color:#EF8354 ;
+  opacity: 3.5;
+}
+</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login-Page</title>
+
+
+	
+
+</head>
+<h1 style=text-align:center;border-style:solid;border-color:#a84232;height:80px;border-radius:25px;font-size:50px;><b>Online  Addmission System  </b></h1>
+
+   <form name="f1" action="signup.html" class="inline">
+  <button class="button" name="signup" class="btn cancel" onclick="closeForm()"><span> Signup </span></button>
+  </form>
+  <button class="button" name="Login" onclick="login()" class="btn" id="Login" ><span>Login</span></button>
+  <br>
+     <br><br>
+                                            
+  
+  <div class="form-popup" id="myForm">
+  <form method="post" class="form-container" id="close">
+  
+   <input type ="submit" class="btn cancel" value="X" style=float:right; onclick="closeForm()">
+    <h1>Login</h1>
+
+    <label for="Id"><b>Id</b></label>
+    <input type="text" placeholder="Enter Login Id" id="t1" name="t1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="t2" name="t2"  required><br>
+    
+     <input type ="submit" class="button1" value="Login">
+   <p>  <a href="signup.html"><b>did'nt have account Signup? </b></a></p>
+    
+
+  </form>
+</div>
+ 
+  
+ 
+ <script type="text/javascript">
+ 
+ 
+ function login() {
+	  document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	  document.getElementById("myForm").style.display = "none";
+	}
+ 
+ 
+ </script>
+ 
+
+</body>
+</html>
